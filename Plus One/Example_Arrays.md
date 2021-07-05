@@ -4,6 +4,37 @@
 C++ Examples Codes Run In Dav C++ IDE </br>
 Download Dev C++ Software : https://sourceforge.net/projects/orwelldevcpp/
 
+# Example 1 : Enter the name of 10 students
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">
+    <span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;iostream&gt;</span></span>
+    <span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;string&gt;</span></span>
+    <span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span><span class="hljs-params">()</span>
+    </span>{
+    
+		<span class="hljs-keyword" style="font-weight: 700;">char</span> name[<span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>][<span class="hljs-number" style="color: rgb(136, 0, 0);">25</span>];
+
+	    <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">"Enter the Names:"</span>&lt;&lt;<span class="hljs-built_in" style="color: rgb(57, 115, 0);">endl</span>;
+	
+	    <span class="hljs-keyword" style="font-weight: 700;">for</span> (<span class="hljs-keyword" style="font-weight: 700;">int</span> i = <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>; i&lt;=<span class="hljs-number" style="color: rgb(136, 0, 0);">9</span>; i++)
+	    {
+	     	<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">"Name"</span>&lt;&lt;i+<span class="hljs-number" style="color: rgb(136, 0, 0);">1</span>&lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">": "</span>;
+	     	<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cin</span>&gt;&gt;name[i]; 
+	    }
+	
+	    <span class="hljs-keyword" style="font-weight: 700;">for</span> (<span class="hljs-keyword" style="font-weight: 700;">int</span> j=<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;j&lt;=<span class="hljs-number" style="color: rgb(136, 0, 0);">9</span>;j++)
+	    {
+	     	<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt;name[j]&lt;&lt;<span class="hljs-built_in" style="color: rgb(57, 115, 0);">endl</span>; 
+	    }
+	
+	    <span class="hljs-keyword" style="font-weight: 700;">return</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+
+    }
+
+</pre>
+ 
 # Example 1 : Traversal 
 
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">    <span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;iostream&gt;</span>  </span>
