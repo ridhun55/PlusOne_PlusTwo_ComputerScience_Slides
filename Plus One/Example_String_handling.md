@@ -42,7 +42,19 @@ Download Dev C++ Software : https://sourceforge.net/projects/orwelldevcpp/
     <span class="hljs-built_in">cout</span> &lt;&lt; str;
 }</pre>
 
-# Example 4 : String Array
+# Example 4 : gets() and space
+
+<pre class="hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstdio&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">char</span> str[<span class="hljs-number">50</span>];
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Enter a string: "</span>;
+    gets(str);
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Output: "</span> &lt;&lt; str;
+}</pre>
 
 # Example 5 : String Array
 
