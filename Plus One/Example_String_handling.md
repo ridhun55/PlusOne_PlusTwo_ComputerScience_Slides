@@ -56,7 +56,22 @@ Download Dev C++ Software : https://sourceforge.net/projects/orwelldevcpp/
     <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Output: "</span> &lt;&lt; str;
 }</pre>
 
-# Example 5 : String Array
+<h2 style="color:red"> Strings Input / Output Functions <h2>
+
+# Example 5 : getchar()
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);"><span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;cstdio&gt;</span></span>
+<span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-keyword" style="font-weight: 700;">char</span> var;
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">"Enter a character : "</span>; 
+  var = getchar();
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"\n Output : "</span>; 
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt; var;
+}</pre>
 
 # Example 6 : String Array
 
