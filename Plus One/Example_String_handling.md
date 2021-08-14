@@ -56,7 +56,7 @@ Download Dev C++ Software : https://sourceforge.net/projects/orwelldevcpp/
     <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Output: "</span> &lt;&lt; str;
 }</pre>
 
-<h2 style="color:red"> Strings Input / Output Functions <h2>
+# Strings Input / Output Functions 
 
 # Example 5 : getchar()
 
