@@ -147,3 +147,18 @@ Download Dev C++ Software : https://sourceforge.net/projects/orwelldevcpp/
     <span class="hljs-built_in" style="color: rgb(57, 115, 0);">putchar</span>(var);  
 }  </pre>
 
+# Example 10 : putch()
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);"><span class="hljs-comment" style="color: rgb(136, 136, 136);">/* putchar example: printing the alphabet */</span>
+<span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span> <span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-keyword" style="font-weight: 700;">char</span> var = <span class="hljs-string" style="color: rgb(136, 0, 0);">'c'</span>;
+  
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">putchar</span> (var);  	<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">"\n"</span>;
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">putchar</span> (var + <span class="hljs-number" style="color: rgb(136, 0, 0);">1</span>);  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">"\n"</span>;
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">putchar</span> (var + <span class="hljs-number" style="color: rgb(136, 0, 0);">5</span>);  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span>&lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">"\n"</span>;
+}</pre>
