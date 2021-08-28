@@ -316,4 +316,72 @@ Download Dev C++ Software : https://sourceforge.net/projects/orwelldevcpp/
 </pre>
 
 # Conversion functions
-# Example 22 : 
+# Example 22 : atoi()
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);"><span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span> <span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-keyword" style="font-weight: 700;">int</span> i;
+  <span class="hljs-keyword" style="font-weight: 700;">char</span> x[<span class="hljs-number" style="color: rgb(136, 0, 0);">33</span>];
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">"Enter a number: "</span>;
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cin</span>&gt;&gt; i;
+  itoa (i, x, <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>);
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"\n decimal = "</span> &lt;&lt; x;
+  
+  itoa (i, x, <span class="hljs-number" style="color: rgb(136, 0, 0);">16</span>);
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"\n hexadecimal = "</span> &lt;&lt; x;
+
+  itoa (i, x, <span class="hljs-number" style="color: rgb(136, 0, 0);">2</span>);
+  <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"\n binary = "</span> &lt;&lt; x;
+  <span class="hljs-keyword" style="font-weight: 700;">return</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+}</pre>
+
+# Example 23 : atoi()
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);"><span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span><span class="hljs-params">()</span>
+</span>{
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> val;
+	<span class="hljs-keyword" style="font-weight: 700;">char</span> strn1[] = <span class="hljs-string" style="color: rgb(136, 0, 0);">"12546"</span>;
+
+	val = atoi(strn1);
+	<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt;<span class="hljs-string" style="color: rgb(136, 0, 0);">"integer of 12546 = "</span> &lt;&lt; val &lt;&lt; <span class="hljs-built_in" style="color: rgb(57, 115, 0);">endl</span>;
+
+}</pre>
+
+# I/O manipulating function
+# Example 24 :setw()
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);"><span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;iostream&gt;</span></span>
+<span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;iomanip&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span> <span class="hljs-params">()</span> </span>{
+   <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>::<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>::setw(<span class="hljs-number" style="color: rgb(136, 0, 0);">40</span>);
+   <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>::<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-number" style="color: rgb(136, 0, 0);">77</span> &lt;&lt; <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>::<span class="hljs-built_in" style="color: rgb(57, 115, 0);">endl</span>;
+   <span class="hljs-keyword" style="font-weight: 700;">return</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+}</pre>
+
+# User defined functions
+# Example 25 : 
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);"><span class="hljs-meta" style="color: rgb(31, 113, 153);">#<span class="hljs-meta-keyword" style="font-weight: 700;">include</span> <span class="hljs-meta-string" style="color: rgb(77, 153, 191);">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">void</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">hello</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"Hello there!"</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span><span class="hljs-params">()</span> 
+</span>{
+    hello();
+}</pre>
+
+# Different types of user defined functions
+# Example 26 : 
