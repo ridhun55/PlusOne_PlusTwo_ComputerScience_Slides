@@ -385,3 +385,101 @@ Download Dev C++ Software : https://sourceforge.net/projects/orwelldevcpp/
 
 # Different types of user defined functions
 # Example 26 : 
+
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">No arguments passed and no <span class="hljs-keyword" style="font-weight: 700;">return</span> value
+----------------------------------------
+
+#include &lt;iostream&gt;
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">void</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">sumfunction</span><span class="hljs-params">()</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span><span class="hljs-params">()</span>
+</span>{
+    sumfunction();
+}
+
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">void</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">sumfunction</span><span class="hljs-params">()</span>
+</span>{
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> a = <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>, b = <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span> , sum = <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+	sum = a + b;
+	<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"result = "</span> &lt;&lt; sum;
+}
+
+
+No arguments passed but a <span class="hljs-keyword" style="font-weight: 700;">return</span> value
+--------------------------------------
+
+# include &lt;iostream&gt;
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">sumfunction</span><span class="hljs-params">()</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span><span class="hljs-params">()</span>
+</span>{
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> result;
+    result = sumfunction();
+    <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"result = "</span> &lt;&lt; result;
+}
+
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">sumfunction</span><span class="hljs-params">()</span>
+</span>{
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> a = <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>, b = <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span> , sum = <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+	sum = a + b;
+	<span class="hljs-keyword" style="font-weight: 700;">return</span> sum;
+	
+}
+
+
+Arguments passed but no <span class="hljs-keyword" style="font-weight: 700;">return</span> value
+------------------------------------
+
+# include &lt;iostream&gt;
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">void</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">sumfunction</span><span class="hljs-params">(<span class="hljs-keyword" style="font-weight: 700;">int</span> x, <span class="hljs-keyword" style="font-weight: 700;">int</span> y)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span><span class="hljs-params">()</span>
+</span>{
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> a = <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>, b = <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>;
+    sumfunction( a,b);
+}
+
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">void</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">sumfunction</span><span class="hljs-params">(<span class="hljs-keyword" style="font-weight: 700;">int</span> x, <span class="hljs-keyword" style="font-weight: 700;">int</span> y)</span>
+</span>{
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> sum = <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+	sum = x + y;
+	<span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"result = "</span> &lt;&lt; sum;
+}
+
+
+Arguments passed and a <span class="hljs-keyword" style="font-weight: 700;">return</span> value.
+------------------------------------
+
+# include &lt;iostream&gt;
+<span class="hljs-keyword" style="font-weight: 700;">using</span> <span class="hljs-keyword" style="font-weight: 700;">namespace</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">sumfunction</span><span class="hljs-params">(<span class="hljs-keyword" style="font-weight: 700;">int</span> x, <span class="hljs-keyword" style="font-weight: 700;">int</span> y)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">main</span><span class="hljs-params">()</span>
+</span>{
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> a = <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>, b = <span class="hljs-number" style="color: rgb(136, 0, 0);">10</span>, result;
+    result = sumfunction( a,b);
+    <span class="hljs-built_in" style="color: rgb(57, 115, 0);">cout</span> &lt;&lt; <span class="hljs-string" style="color: rgb(136, 0, 0);">"result = "</span> &lt;&lt; result;
+}
+
+
+<span class="hljs-function"><span class="hljs-keyword" style="font-weight: 700;">int</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 700;">sumfunction</span><span class="hljs-params">(<span class="hljs-keyword" style="font-weight: 700;">int</span> x, <span class="hljs-keyword" style="font-weight: 700;">int</span> y)</span>
+</span>{
+	<span class="hljs-keyword" style="font-weight: 700;">int</span> sum = <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+	sum = x + y;
+	<span class="hljs-keyword" style="font-weight: 700;">return</span> sum;
+	
+}
+
+
+</pre>
