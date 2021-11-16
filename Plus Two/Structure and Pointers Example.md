@@ -244,7 +244,6 @@ int main()
 ```
 
 # Example 11 : pointer string array
-
 ```c++
 #include <iostream>
 using namespace std;
@@ -258,5 +257,93 @@ int main()
   {
   	cout<< name[i] <<"\n";
   }
+}
+```
+
+# Example 12 : structure Pointer
+```c++
+#include <iostream>
+using namespace std;
+
+struct student
+{
+	char name[50];
+	int roll;
+	float mark;
+};
+
+int main()
+{
+  student *ptr, x;
+  ptr = &x;
+  cout<<"\n Roll No. : ";
+  cin>>(*ptr).roll;
+  cout<<"\n Name : ";
+  cin>>(*ptr).name;
+  cout<<"\n Marks : ";
+  cin>>(*ptr).mark;
+  
+  cout<<"\n =========== Output ==========\n";
+  cout<<(*ptr).roll << " : " <<(*ptr).name <<" : " <<(*ptr).mark;
+}
+```
+
+# Example 13 : structure Pointer [Dynamic]
+```c++
+#include <iostream>
+using namespace std;
+
+struct student
+{
+	char name[50];
+	int roll;
+	float mark;
+};
+
+int main()
+{
+  student *ptr;
+  ptr = new student;
+  cout<<"\n Roll No. : ";
+  cin>>(*ptr).roll;
+  cout<<"\n Name : ";
+  cin>>(*ptr).name;
+  cout<<"\n Marks : ";
+  cin>>(*ptr).mark;
+  
+  cout<<"\n =========== Output ==========\n";
+  cout<<(*ptr).roll << " : " <<(*ptr).name <<" : " <<(*ptr).mark;
+  delete ptr;
+}
+```
+
+# Example 15 : Reference operator
+```c++
+#include <iostream>
+using namespace std;
+
+struct student
+{
+	char name[50];
+	int roll;
+	float mark;
+	student *link;
+};
+
+int main()
+{
+  student *ptr;
+  ptr = new student;
+  
+  cout<<"\n Roll No. : ";
+  cin>> ptr -> roll;
+  cout<<"\n Name : ";
+  cin>> ptr -> name;
+  cout<<"\n Marks : ";
+  cin>> ptr -> mark;
+  
+  cout<<"\n =========== Output ==========\n";
+  cout<<(*ptr).roll << " : " <<(*ptr).name <<" : " <<(*ptr).mark;
+  delete ptr;
 }
 ```
