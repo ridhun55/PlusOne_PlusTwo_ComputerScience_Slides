@@ -1,5 +1,5 @@
 
-```shell
+```c++
 struct student
 {
   int roll;
