@@ -134,3 +134,20 @@ int main()
   cout<<"\n";
 }
 ```
+
+# & -Address of operator* -Dereference operators
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int x = 25;
+  int *ptr = &x;
+  cout<< &x; cout<<" --> &x\n";
+  cout<< ptr; cout<<" --> ptr\n";
+  cout<< *ptr; cout<<" --> *ptr\n";
+  cout<< &ptr; cout<<" --> &ptr\n";
+  cout<< x; cout<<" --> x\n";
+}
+```
