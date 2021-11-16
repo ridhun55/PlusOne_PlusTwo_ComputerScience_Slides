@@ -96,7 +96,7 @@ int main()
 }
 ```
 
-# Example 3 : Nested Structure [def 2] 
+# Example 4 : Nested Structure [def 2] 
 ```c++
 #include <iostream>
 using namespace std;
@@ -134,8 +134,11 @@ int main()
   cout<<"\n";
 }
 ```
+</br>
+<h1>Pointer</h1>
+</br>
 
-# & -Address of operator* -Dereference operators
+# Example 5 : & -Address of operator * -Dereference operators
 ```c++
 #include <iostream>
 using namespace std;
@@ -149,5 +152,111 @@ int main()
   cout<< *ptr; cout<<" --> *ptr\n";
   cout<< &ptr; cout<<" --> &ptr\n";
   cout<< x; cout<<" --> x\n";
+}
+```
+
+
+# Example 6 : Write a program to addtwo numbers using pointer
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int x, y;
+  int *ptr1, *ptr2;
+  ptr1 = &x;
+  ptr2 = &y;
+  cout<< "Enter 1st Number : ";
+  cin>> *ptr1;
+  cout<< "\nEnter 2nd Number : ";
+  cin>> *ptr2;
+  cout<< "\n Sum = " << *ptr1 + *ptr2;
+}
+```
+
+# Example 7 : new & delete Operator [Dynamic]
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int *ptr;
+  ptr = new int;
+  cout<< "Enter a Number : ";
+  cin>> *ptr;
+  cout<< "\n Number is : "<< *ptr;
+  delete ptr;
+}
+```
+
+# Example 8 : Pointer Array [ shows first data only ]
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int data[5] = {10, 5, 7, 8};
+  int *ptr = &data[0];
+  cout<< "\n &data : " <<&data;
+  cout<< " -- ptr : "<< ptr;
+}
+```
+
+# Example 9 : Pointer Array
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int data[5] = {10, 5, 7, 8};
+  
+  for(int i=0;i<5;i++)
+  {
+  	cout<<*(data + i)<<"\n";
+  }
+}
+```
+
+#  Example 10 : Pointer Array
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int data[5];
+  cout<<"Enter 5 Number";
+  for(int i=0;i<5;i++)
+  {
+  	cin>>*(data + i);
+  }
+  
+  cout<<"\nNumbers are\n";
+  for(int i=0;i<5;i++)
+  {
+  	cout<<*(data + i)<<"\n";
+  }
+}
+```
+
+# Example 11 : pointer string array
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  char *name[4] = {"appu", "raju", "vishnu", "vivek"};
+  
+  cout<<"Strings are : \n";
+  for(int i=0;i<4;i++)
+  {
+  	cout<< name[i] <<"\n";
+  }
 }
 ```
