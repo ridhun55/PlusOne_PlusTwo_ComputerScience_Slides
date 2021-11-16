@@ -55,7 +55,7 @@ int main()
 }
 ```
 
-# Example 2 : Structure Array 
+# Example 3 : Nested Structure [def 1] 
 ```c++
 #include <iostream>
 using namespace std;
@@ -72,6 +72,45 @@ struct student
 	int roll;
 	char name[50];
 	date dob;
+};
+
+int main()
+{
+  student s;
+  cout<<"Enter Information\n" ;
+  cout<<"\n Roll No : ";
+  cin>> s.roll ;
+  cout<<"\n Name : ";
+  cin>>s.name;
+  cout<<"\n Date Of Birth : ";
+  cout<<"\n Day : ";cin>>s.dob.day;
+  cout<<"\n Month : ";cin>>s.dob.month;
+  cout<<"\n Year : ";cin>>s.dob.year;
+
+  cout<<"\n\n students information\n" ;
+  cout<<"================================\n" ;
+  cout<<s.roll; 
+  cout<<" : "; cout<<s.name; 
+  cout<<" : "; cout<<s.dob.day;cout<<"/";cout<<s.dob.month;cout<<"/";cout<<s.dob.year;
+  cout<<"\n";
+}
+```
+
+# Example 3 : Nested Structure [def 2] 
+```c++
+#include <iostream>
+using namespace std;
+
+struct student
+{
+	int roll;
+	char name[50];
+	struct date
+	{
+		int day;
+		int month;
+		int year;
+	}dob;
 };
 
 int main()
