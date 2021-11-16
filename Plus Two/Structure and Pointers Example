@@ -10,4 +10,5 @@ imt main()
 {
   student s;
 }
+
 ```
